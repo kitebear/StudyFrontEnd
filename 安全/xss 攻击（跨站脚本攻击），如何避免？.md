@@ -1,0 +1,36 @@
+<!--
+ * @Author: 谢东昊
+ * @Email：xiedonghao@hualala.com
+ * @Date: 2023-05-10 22:36:20
+ * @Description: 页面/组件/功能的描述
+ * @FilePath: /StudyFrontEnd/安全/xss 攻击（跨站脚本攻击），如何避免？.md
+-->
+XSS攻击（跨站脚本攻击）是一种常见的Web安全漏洞，攻击者通过注入恶意脚本代码，从而获取用户的敏感信息或者使用用户的身份进行操作，对网站和用户造成损失。
+
+为了避免XSS攻击，可以采取如下措施：
+
+1. 输入过滤
+
+对于用户输入的内容进行严格的过滤，删除或者转义HTML、JavaScript、CSS等特殊字符，从而防止恶意脚本的注入。
+
+2. 输出编码
+
+对于动态生成的内容，一定要进行编码处理，例如将 HTML 特殊字符进行转义，将 < 转义为 &lt; 将 > 转义为 &gt;，将 " 转义为 &quot;，这样就可以避免脚本被识别执行。
+
+3. Cookie安全设置
+
+设置cookie的http only属性，这样在 JavaScript 中就无法通过 document.cookie 获取到cookie值，从而避免了XSS攻击。
+
+4. HTTPS协议
+
+采用HTTPS协议，可以对传输的数据进行加密和验证，防止被黑客劫持篡改和窃听。
+
+5. 避免使用eval、new Function
+
+eval或者new Function可以执行动态生成的代码，容易被注入恶意代码，应该尽量避免使用。
+
+6. 避免使用innerHTML、document.write
+
+innerHTML和document.write可以直接向HTML页面中插入代码片段，容易被注入恶意代码，应该尽量避免使用。
+
+通过以上措施可以有效避免XSS攻击，但是鉴于攻击手段不断进化，需要时刻关注最新的安全漏洞情况，及时采取措施加强安全防护。
