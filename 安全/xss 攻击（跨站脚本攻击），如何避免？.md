@@ -1,10 +1,3 @@
-<!--
- * @Author: 谢东昊
- * @Email：xiedonghao@hualala.com
- * @Date: 2023-05-10 22:36:20
- * @Description: 页面/组件/功能的描述
- * @FilePath: /StudyFrontEnd/安全/xss 攻击（跨站脚本攻击），如何避免？.md
--->
 XSS攻击（跨站脚本攻击）是一种常见的Web安全漏洞，攻击者通过注入恶意脚本代码，从而获取用户的敏感信息或者使用用户的身份进行操作，对网站和用户造成损失。
 
 为了避免XSS攻击，可以采取如下措施：
