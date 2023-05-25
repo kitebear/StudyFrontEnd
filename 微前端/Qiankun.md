@@ -1,0 +1,7 @@
+Qiankun是一个基于微前端的解决方案，但它并不是基于iframe的。Qiankun是基于浏览器新特性Web Components和Custom Elements实现的
+
+它使用了Shadow DOM来隔离各个子应用的CSS和JavaScript，这样可以避免全局命名冲突。
+
+它使用了HTML5的History API和postMessage API来处理子应用之间的路由跳转与通信。
+
+相比之下，使用iframe来实现微前端存在一些问题，比如iframe之间会出现安全限制问题，同时会出现全局CSS污染等问题，难以很好地解决。因此，Qiankun选择了Web Components来实现微前端架构，使得它可以更好地实现应用之间的隔离和通信。
